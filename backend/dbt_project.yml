@@ -1,0 +1,20 @@
+name: "service"
+version: "1.0.0"
+
+profile: "service"
+
+model-paths: ["service/models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+
+models:
+  service:
+    dim_currency_model: # Change this from DimCurrency
+      +materialized: table

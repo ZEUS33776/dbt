@@ -1,0 +1,10 @@
+version: 2
+sources:
+  - name: dbo
+    database: AdventureWorks2022
+    schema: dbo
+    tables:
+      - name: DimCurrency
+        description: "Table containing currency data"
+      - name: DimProduct
+        description: "Table containing product data"
